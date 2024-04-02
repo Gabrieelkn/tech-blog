@@ -5,7 +5,7 @@ import PostCard from "./PostCard";
 export default async function LastPosts() {
   const supabase = createClient();
   let { data: articles, error } = await supabase.from("articles").select("*");
-  console.log(articles);
+
   return (
     <div>
       <h1>Last posts</h1>
