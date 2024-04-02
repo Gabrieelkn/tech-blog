@@ -1,0 +1,17 @@
+/* Color */
+/* Font */
+/* Breakpoints */
+.single_post {
+  margin: 1rem auto;
+  min-height: 100vh;
+}
+.single_post h5 {
+  margin-bottom: 1rem;
+}
+.single_post code:not(pre code) {
+  color: #003566;
+}
+.single_post ol,
+.single_post ul {
+  list-style-position: inside;
+}/*# sourceMappingURL=styles.module.css.map */

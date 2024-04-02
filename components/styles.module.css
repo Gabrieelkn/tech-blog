@@ -1,0 +1,113 @@
+/* Color */
+/* Font */
+/* Breakpoints */
+.header {
+  background-color: #003566;
+  height: 10vh;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  max-width: 1200px;
+  height: inherit;
+}
+
+.footer {
+  text-align: center;
+  height: 3rem;
+  margin-top: 5rem;
+  bottom: 0rem;
+  background-color: #003566;
+  padding-top: 1rem;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+.search input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.search button[type=submit] {
+  background-color: #4e99e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.9s ease;
+}
+.search button[type=submit]:hover {
+  transform: scale(1.1);
+  color: #fcfffc;
+  background-color: #003566;
+}
+
+.posts_wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.post_card {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  height: 18rem;
+  background-color: #333d47;
+  color: #fcfffc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post_subtitle {
+  margin: 1rem 0rem;
+}
+
+.post_button {
+  color: #ffd60a;
+  margin-bottom: 1rem;
+}
+.post_button:hover {
+  cursor: pointer;
+  color: darkyellow;
+}
+
+.back_to_home_button {
+  color: #003566;
+  height: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.back_to_home_button:hover {
+  cursor: pointer;
+  color: darkblue;
+}
+
+.back_arrow {
+  height: 20px;
+}/*# sourceMappingURL=styles.module.css.map */

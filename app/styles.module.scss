@@ -1,0 +1,19 @@
+@use "../utils/variables" as*;
+
+.single_post {
+    margin: 1rem auto;
+    min-height: 100vh;
+
+    h5 {
+        margin-bottom: 1rem;
+    }
+
+    code:not(pre code) {
+        color: $mainColor;
+    }
+
+    ol,
+    ul {
+        list-style-position: inside;
+    }
+}
