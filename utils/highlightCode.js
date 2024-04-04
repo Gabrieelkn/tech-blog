@@ -11,5 +11,5 @@ export const HighlightCode = ({ content }) => {
     hljs.highlightAll();
   }, []);
 
-  return <div>{content}</div>;
+  return <div style={{ marginTop: "1rem" }}>{content}</div>;
 };

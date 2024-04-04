@@ -3,6 +3,7 @@ import { createClient } from "@/utils/supabaseServer";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { HighlightCode } from "@/utils/highlightCode";
 import BackToHomeButton from "@/components/BackToHomeButton";
+import Tags from "@/components/Tags";
 
 export async function generateMetadata({ params }) {
   const supabase = createClient();
@@ -25,19 +26,15 @@ export default async function Page({ params }) {
     .select("*")
     .eq("id", params.slug);
 
-  return (
-    <div>
-      {article.map((a) => {
-        return (
-          <div className={styles.single_post} key={a.id}>
-            <BackToHomeButton />
-            <h2>{a.title}</h2>
-            <h5>{a.date}</h5>
-
-            {<HighlightCode content={<MDXRemote source={a.content} />} />}
-          </div>
-        );
-      })}
-    </div>
-  );
+  return article.map((a) => {
+    return (
+      <div className={styles.single_post} key={a.id}>
+        <BackToHomeButton />
+        <h2>{a.title}</h2>
+        <h5>{a.date}</h5>
+        <Tags article={a} />
+        {<HighlightCode content={<MDXRemote source={a.content} />} />}
+      </div>
+    );
+  });
 }
