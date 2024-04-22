@@ -10,7 +10,7 @@ export default function PostCard({ article }) {
         <p>{article.date}</p>
         <Tags article={article} />
       </div>
-      <p className={styles.post_subtitle}>{article.subtitle}</p>
+      <p>{article.subtitle}</p>
       <Link className={styles.post_button} href={`posts/${article.id}`}>
         Read more
       </Link>
