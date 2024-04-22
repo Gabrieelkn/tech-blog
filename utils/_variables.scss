@@ -1,9 +1,9 @@
 /* Color */
 $mainColor: #003566;
-$secColor: #ffd60a;
+$secColor: #004D17;
 $white: #fcfffc;
 $black: #000814;
-$gray: #333d47;
+$gray: #3E4246;
 
 /* Font */
 $headerFont: min(9vw, 4.5rem);
@@ -69,6 +69,7 @@ $computer: 1439px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 2rem;
 }
 
 @mixin flexCenterColumn {
