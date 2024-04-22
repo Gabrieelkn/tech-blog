@@ -8,13 +8,13 @@
 .single_post {
   margin: 1rem auto;
   min-height: 100vh;
-  color: #fcfffc;
+  color: #000814;
 }
 .single_post h5 {
   margin-bottom: 1rem;
 }
 .single_post code:not(pre code) {
-  color: #ffd60a;
+  color: #004D17;
 }
 .single_post ol,
 .single_post ul {

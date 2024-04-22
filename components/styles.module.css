@@ -3,7 +3,7 @@
 /* Breakpoints */
 .header {
   background-color: #003566;
-  height: 10vh;
+  height: 3rem;
   display: grid;
   place-items: center;
   color: #fcfffc;
@@ -41,20 +41,21 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .post_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
   width: 100%;
   border-radius: 10px;
   padding: 0.5rem;
-  height: 22rem;
-  background-color: #333d47;
+  height: 20rem;
   box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 5px -1px, rgba(255, 255, 255, 0.1) 0px 1px 3px -1px;
-  color: #fcfffc;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  color: #000814;
 }
 @media screen and (min-width: 768px) {
   .post_card {
@@ -82,8 +83,12 @@
 }
 
 .post_button {
-  color: #ffd60a;
-  margin-bottom: 0.5rem;
+  color: #000814;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.2rem;
+  border-radius: 10px;
+  border: none;
 }
 .post_button:hover {
   cursor: pointer;
@@ -91,7 +96,7 @@
 }
 
 .back_to_home_button {
-  color: #ffd60a;
+  color: #004D17;
   height: 20px;
   width: 100px;
   display: flex;

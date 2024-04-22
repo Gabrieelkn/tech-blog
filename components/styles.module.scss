@@ -2,7 +2,7 @@
 
 .header {
     background-color: $mainColor;
-    height: 10vh;
+    height: 3rem;
     display: grid;
     place-items: center;
     color: $white;
@@ -41,20 +41,17 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .post_card {
+    @include flexStartColumn;
     width: 100%;
     border-radius: 10px;
     padding: .5rem;
-    height: 22rem;
-    background-color: $gray;
+    height: 20rem;
     box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 5px -1px, rgba(255, 255, 255, 0.1) 0px 1px 3px -1px;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    color: $black;
 
     @media screen and (min-width:768px) {
         height: 15rem;
@@ -82,8 +79,11 @@
 }
 
 .post_button {
-    color: $secColor;
-    margin-bottom: .5rem;
+    color: $black;
+    width: max-content;
+    padding: .2rem;
+    border-radius: 10px;
+    border: none;
 
     &:hover {
         cursor: pointer;
