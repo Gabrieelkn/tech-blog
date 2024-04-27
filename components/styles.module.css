@@ -104,10 +104,6 @@
   align-items: center;
   margin-bottom: 1rem;
 }
-.back_to_home_button:hover {
-  cursor: pointer;
-  color: yellow;
-}
 
 .back_arrow {
   height: 20px;
